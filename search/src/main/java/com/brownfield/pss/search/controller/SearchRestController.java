@@ -38,6 +38,12 @@ class SearchRestController {
 	GaugeService gaugeService;
 
 	
+	@RequestMapping(value = "message" , method = RequestMethod.GET)
+	public String sayHello() {
+		return "OKEEEEEEE";
+	}
+
+	
 	@Autowired
 	public SearchRestController(SearchComponent searchComponent, GaugeService gaugeService){
 		this.gaugeService = gaugeService;

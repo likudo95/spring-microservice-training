@@ -2,20 +2,14 @@
 
 Follow the steps below to run
 
-Container Docker 
+Run Rabbit MQ
 ----------------------------------------------
-docker pull postgres
-
-docker run --name postgres-msa -e POSTGRES_PASSWORD=mysecretpassword -d postgres
-
-docker pull rabbitmq
-
-docker run -d --hostname my-rabbit --name rabbit-msa rabbitmq:3-management -p 5672:5672 -p 15672:15672
+./rabbitmq-server
 
 Database Configuration
 ----------------------------------------------
 - Start Postgres service in localhost on port 5432
-- Make sure there is a user 'postgres' with mysecretpassword
+- Make sure there is a user 'postgres' with no password
 - Under 'postgres' user, execute setup/build_db.sql to set up new DB and load dummy data
 
 Build all projects using the pom.xml at the root level. 
