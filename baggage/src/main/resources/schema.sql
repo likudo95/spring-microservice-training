@@ -1,0 +1,6 @@
+DROP TABLE IF EXISTS BAGGAGE;
+CREATE TABLE  BAGGAGE (
+  id BIGINT PRIMARY KEY,
+  weight DOUBLE not null,
+  checkin_id BIGINT not null
+);

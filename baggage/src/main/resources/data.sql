@@ -1,0 +1,1 @@
+INSERT INTO Baggage VALUES (1, 1, 1);
